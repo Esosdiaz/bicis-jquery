@@ -20,3 +20,9 @@ $(document).ready(function(){
         var apellido = $('#lastname').val();
         var correo = $('#input-email').val();
         var contrasena = $('#input-password').val();
+
+        if(nombre == "" || !nombreReg.test(nombre)){
+        	$('#mensajeNombre').fadeIn();
+        	}else{
+        		if(apellido == "" || !nombreReg.test(apellido)){
+        			$('#mensajeApellido').fadeIn();
