@@ -1,3 +1,10 @@
-function validateForm(){
-	/* Escribe tú código aquí */
-}
+$(document).ready(function(){
+		//spans escondidos con el mensaje de error
+		$('#mensajeNombre').hide();
+		$('#mensajeApellido').hide();
+		$('#mensajeMail').hide();
+		$('#mensajePass').hide();
+
+	$('.submit-btn').click(function(){
+		validateForm();
+	});

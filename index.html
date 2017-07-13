@@ -22,25 +22,23 @@
           </h2>
           <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
-            <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre">
+            <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre">
+            <span id="mensajeNombre" class="help-inline errores">Ingrese su apellido. Este campo es obligatorio.</span>
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
-            <input type="text" id="lastname" class="form-control"
-            placeholder="Ingrese su apellido">
+            <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
+            <span id="mensajeApellido" class="help-inline errores">Ingrese su apellido. Este campo es obligatorio.</span>
           </div>
           <div class="email-container input-box">
-            <label for="inputEmail" class="sr-only">
-              Correo Electrónico
-            </label>
+            <label for="inputEmail" class="sr-only">Correo Electrónico</label>
             <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="">
+            <span id="mensajeMail" class="help-inline errores">Ingrese su e-mail. Este campo es obligatorio.</span>
           </div>
           <div class="form-group input-box">
-            <label for="inputPassword" class="sr-only">
-              Contraseña
-            </label>
+            <label for="inputPassword" class="sr-only">Contraseña</label>
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
+            <span id="mensajePass" class="help-inline errores">Ingrese su password. Este campo es obligatorio.</span>
           </div>
           <div class="form-group input-box">
             <select class="form-control">
@@ -61,11 +59,12 @@
               <span>Deseo recibir información vía email</span>
             </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
+          <button id="botonEnviar" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
         </form>
       </div>  
     </section>
     <!-- /container -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type='text/javascript' src='js/main.js'></script>
     <script type='text/javascript' src='js/donottouchthisfile.js'></script>
   </body>
