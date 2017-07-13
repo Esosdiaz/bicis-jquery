@@ -26,3 +26,15 @@ $(document).ready(function(){
         	}else{
         		if(apellido == "" || !nombreReg.test(apellido)){
         			$('#mensajeApellido').fadeIn();
+        			}else{
+        				if(correo == "" || !correoReg.test(correo)){
+        					$('#mensajeMail').fadeIn();
+        					}else{
+        						if(contrasena == "" || contrasena.length < 6 || contrasena == 'password' || contrasena == "123456" || contrasena == "098765"){
+        						$('#mensajePass').fadeIn();
+        				}
+        			}
+        		}
+        	}
+        }
+})
